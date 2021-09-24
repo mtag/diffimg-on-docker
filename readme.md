@@ -1,7 +1,10 @@
 # diffimg container
 * This image provides DiffImg command to compare two different images.
 
-* Compile from https://github.com/sandsmark/diffimg, not [original source](https://sourceforge.net/projects/diffimg/).
+* image : https://hub.docker.com/repository/docker/mtagu/diffimg
+   based on ubuntu
+
+* Based source from [sandsmark patched](https://github.com/sandsmark/diffimg), not [original source](https://sourceforge.net/projects/diffimg/).
 
 
 ## How to use
@@ -10,6 +13,6 @@
 	
 ```shell
 $ xhost +
-$ docker run -e DISPLAY="$DISPLAY" -v   mtagu:diffimg 
+$ docker run -e DISPLAY="$DISPLAY" -v $HOME/.Xauthority:/root/.Xauthority  mtagu/diffimg:latest
 ```
-    + 
+    
