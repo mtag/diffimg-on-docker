@@ -13,6 +13,6 @@
 	
 ```shell
 $ xhost +
-$ docker run -e DISPLAY="$DISPLAY" -v $HOME/.Xauthority:/root/.Xauthority  mtagu/diffimg:latest
+$ docker run -e DISPLAY="$DISPLAY" -v $HOME/.Xauthority:/root/.Xauthority mtagu/diffimg:latest -v ./a:/diff -w /diff diffimg /diff/a.jpg /diff/b.jpg
 ```
     
